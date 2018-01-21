@@ -1,0 +1,9 @@
+click
+librosa
+numpy
+pandas
+scikit-learn
+scipy
+tensorboard_logger
+torch
+tqdm
