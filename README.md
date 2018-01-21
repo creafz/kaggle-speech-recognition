@@ -38,9 +38,9 @@ submissions/
 
 ### Requirements
 - Python 3.6
-- PyTorch 0.4.0a0 (If you want to use version 0.3, you need to modify [train.py](train.py) file: 
-remove [`with torch.no_grad`](train.py#L98) and pass [`volatile=True`](train.py#L42-L43)
-when you are creating Variables while running `forward_pass` in a validation mode)
+- PyTorch 0.4.0a0. If you want to use version 0.3, you need to modify [train.py](train.py) and [predict.py](predict.py) files: 
+  - remove [`with torch.no_grad`](train.py#L98) and pass [`volatile=True`](train.py#L42-L43) when you are creating Variables while running `forward_pass` in a validation mode).
+  - remove [`with torch.no_grad`](predict.py#L56) and pass [`volatile=True`](predict.py#L58) when you are creating a Variable.
 - Libraries from requirements.txt
 
 ### To run the code
